@@ -1,1 +1,1 @@
-Music blog at [url=harrishutchison.com]harrishutchison.com[/url]
+Music blog at [harrishutchison.com](https://www.harrishutchison.com)
