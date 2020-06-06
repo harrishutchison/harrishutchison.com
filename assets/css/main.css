@@ -2304,6 +2304,10 @@ input, select, textarea {
 
 /* Image */
 
+	.album {
+		border-radius: 4px;
+	}
+
 	.image {
 		border-radius: 4px;
 		border: 0;
