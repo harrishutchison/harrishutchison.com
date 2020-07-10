@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://harrishutchison.com/</loc>
+  <lastmod>2020-07-10T16:12:20+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/index</loc>
+  <lastmod>2020-07-10T16:12:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/aboutme</loc>
+  <lastmod>2020-07-10T16:12:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/showcases/we-were-promised-jetpacks-out-of-interest</loc>
+  <lastmod>2020-07-10T16:12:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/showcases/phoebe-bridgers-punisher</loc>
+  <lastmod>2020-07-10T16:12:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/showcases/rolling-blackouts-coastal-fever-sideways-to-new-italy</loc>
+  <lastmod>2020-07-10T16:12:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/showcases/sports-team-deep-down-happy</loc>
+  <lastmod>2020-07-10T16:12:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/showcases/mauvey-night-skin-pt-1</loc>
+  <lastmod>2020-07-10T16:12:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/showcases/big-red-machine-big-red-machine</loc>
+  <lastmod>2020-07-10T16:12:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/showcases/el-vy-return-to-the-moon</loc>
+  <lastmod>2020-07-10T16:12:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://harrishutchison.com/showcases/the-mountain-goats-the-sunset-tree</loc>
+  <lastmod>2020-07-10T16:12:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
