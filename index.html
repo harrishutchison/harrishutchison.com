@@ -64,8 +64,18 @@
 								<h1>Harris' Music Showcases</h1>
 								<p>Below you will find my latest music showcases, please click on one and give it a read.</p>
 							</header>
-							<section class="tiles">
-								<!--<article class="style2">
+							<section id="filters">
+								<ul class="actions">
+									<li><a onclick="filterSelection('all')" class="button primary">All</a></li>
+									<li><a onclick="filterSelection('albums')" class="button">Albums</a></li>
+									<li><a onclick="filterSelection('eps')" class="button">EPs</a></li>
+									<li><a onclick="filterSelection('singles')" class="button">Singles</a></li>
+									
+								</ul>
+								<input class="form-control" id="myInput" type="text" placeholder="Search..">
+							</section>
+							<section class="tiles" id="myList">
+								<!--<article class="style2 filter eps">
 									<span class="image">
 										<img src="images/human.jpg" alt="" />
 									</span>
@@ -73,7 +83,7 @@
 										<h2>Grace Bland</h2><h2>-</h2><h2>Human</h2>
 									</a>
 								</article>-->
-								<article class="style2">
+								<article class="style2 filter singles">
 									<span class="image">
 										<img src="images/a-boat-to-drown-in.jpeg" alt="" />
 									</span>
@@ -81,7 +91,7 @@
 										<h2>METZ</h2><h2>-</h2><h2>A Boat to Drown In</h2>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2 filter eps">
 									<span class="image">
 										<img src="images/night-skin-pt-2.jpg" alt="" />
 									</span>
@@ -89,7 +99,7 @@
 										<h2>Mauvey</h2><h2>-</h2><h2>Night Skin, Pt. 2</h2>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2 filter eps">
 									<span class="image">
 										<img src="/images/out-of-interest.png" alt="" />
 									</span>
@@ -97,7 +107,7 @@
 										<h2>We Were Promised Jetpacks</h2><h2>-</h2><h2>out of interest</h2>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2 filter albums">
 									<span class="image">
 										<img src="https://ia801504.us.archive.org/21/items/mbid-053dc03a-871e-40cf-80fa-e079b0b8a52b/mbid-053dc03a-871e-40cf-80fa-e079b0b8a52b-26497048751.jpg" alt="" />
 									</span>
@@ -105,7 +115,7 @@
 										<h2>Phoebe Briders</h2><h2>-</h2><h2>Punisher</h2>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2 filter albums">
 									<span class="image">
 										<img src="https://ia802909.us.archive.org/27/items/mbid-be75d7ef-28aa-4ced-ba58-2a0affee627e/mbid-be75d7ef-28aa-4ced-ba58-2a0affee627e-25901196075.jpg" alt="" />
 									</span>
@@ -113,7 +123,7 @@
 										<h2>Rolling Blackouts Coastal Fever</h2><h2>-</h2><h2>Sideways to New Italy</h2>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2 filter albums">
 									<span class="image">
 										<img src="https://ia801400.us.archive.org/21/items/mbid-38c21fea-3558-4d4b-b08f-cd428f012793/mbid-38c21fea-3558-4d4b-b08f-cd428f012793-26375122488.jpg" alt="" />
 									</span>
@@ -121,7 +131,7 @@
 										<h2>Sports Team</h2><h2>-</h2><h2>Deep Down Happy</h2>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2 filter eps">
 									<span class="image">
 										<img src="images/night-skin-pt-1.png" alt="" />
 									</span>
@@ -129,7 +139,7 @@
 										<h2>Mauvey</h2><h2>-</h2><h2>Night Skin, Pt. 1</h2>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2 filter albums">
 									<span class="image">
 										<img src="https://ia800702.us.archive.org/23/items/mbid-8d8ae24b-105c-4007-b1e5-1cdab765b109/mbid-8d8ae24b-105c-4007-b1e5-1cdab765b109-21143403104.jpg" alt="" />
 									</span>
@@ -137,7 +147,7 @@
 										<h2>Big Red Machine</h2><h2>-</h2><h2>Big Red Machine</h2>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2 filter albums">
 									<span class="image">
 										<img src="https://ia801308.us.archive.org/35/items/mbid-662ef0df-862d-47aa-b931-482e5c547d54/mbid-662ef0df-862d-47aa-b931-482e5c547d54-13407165633.jpg" alt="" />
 									</span>
@@ -145,7 +155,7 @@
 										<h2>EL VY</h2><h2>-</h2><h2>Return to the Moon</h2>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style2 filter albums">
 									<span class="image">
 										<img src="https://ia800300.us.archive.org/17/items/mbid-da425314-ecc7-4db3-a296-90942f172b18/mbid-da425314-ecc7-4db3-a296-90942f172b18-7927245448.jpg" alt="" />
 									</span>
@@ -181,6 +191,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/filter.js"></script>
+
+			<script>
+				$(document).ready(function(){
+				  $("#myInput").on("keyup", function() {
+					var value = $(this).val().toLowerCase();
+					$("#myList article").filter(function() {
+					  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+					});
+				  });
+				});
+				</script>
 
 	</body>
 </html>
